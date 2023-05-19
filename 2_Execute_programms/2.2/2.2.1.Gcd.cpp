@@ -1,3 +1,4 @@
+// task 2.2.1.
 unsigned gcd(unsigned a, unsigned b)
 {
 	if (a == 0)

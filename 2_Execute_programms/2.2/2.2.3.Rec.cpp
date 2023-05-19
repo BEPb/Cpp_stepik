@@ -1,7 +1,7 @@
+// task 2.2.3.
 #include <iostream>
 
 using namespace std;
-
 
 void rec()
 {

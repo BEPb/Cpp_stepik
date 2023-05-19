@@ -1,3 +1,4 @@
+// task 1.8.7.
 #include <iostream>
 
 using namespace std;
