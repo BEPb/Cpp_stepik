@@ -1,3 +1,4 @@
+// task 1.8.5.
 #include <iostream>
 #include <cmath>
 
