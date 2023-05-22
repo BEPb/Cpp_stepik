@@ -14,11 +14,12 @@
 ## Порядок подготовки и работы с ботом
 
 1. Клонировать репозиторий либо скачать архив из github или при помощи следующих команд в командной строке
-   ```commandline
-   $ cmd
-   $ git clone https://github.com/BEPb/Cpp_stepik
-   $ cd Cpp_stepik
-   ```
+```commandline
+
+$ cmd
+$ git clone https://github.com/BEPb/Cpp_stepik
+$ cd Cpp_stepik
+```
 
 2. Цель этого репозитория, помочь начинающему программисту получить знания, ну и как награду сертификат
 
