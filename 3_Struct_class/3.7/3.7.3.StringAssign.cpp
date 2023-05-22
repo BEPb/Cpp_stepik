@@ -1,3 +1,4 @@
+// task 3.7.3.
 #include <algorithm> // std::swap
 #include <cstddef>   // size_t
 #include <cstring>   // strlen, strcpy

@@ -1,3 +1,4 @@
+// task 3.7.2.
 #include <cstddef> // size_t
 #include <cstring> // strlen, strcpy
 
