@@ -1,3 +1,4 @@
+// task 5.2.3.
 struct Rational
 {
     Rational(int numerator = 0, int denominator = 1);
