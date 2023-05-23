@@ -23,6 +23,6 @@ $ cd Cpp_stepik
 
 2. Цель этого репозитория, помочь начинающему программисту получить знания, ну и как награду сертификат
 
-<img src="./art/stepik_cpp.png" alt="sertificate" >
+<img src="./art/certificate.png" alt="sertificate" >
 
 
