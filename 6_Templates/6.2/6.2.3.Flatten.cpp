@@ -1,3 +1,4 @@
+// task 6.2.3.
 #include <iostream>
 #include <cstddef>
 

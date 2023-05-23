@@ -1,3 +1,4 @@
+// task 6.1.3.
 #include <iostream>
 using namespace std;
 /*

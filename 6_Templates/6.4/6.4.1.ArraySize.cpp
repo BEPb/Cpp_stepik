@@ -1,3 +1,4 @@
+// task 6.4.1.
 #include <cstddef> // size_t
 
 // реализуйте шаблонную функцию array_size,

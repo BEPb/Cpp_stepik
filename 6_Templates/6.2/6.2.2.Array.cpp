@@ -1,3 +1,4 @@
+// task 6.2.2.
 #include <cstddef>
 
 template <typename T>
