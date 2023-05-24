@@ -21,40 +21,12 @@ using namespace std;
 template <typename T>
 class Array
 {
-    // Список операций:
-    //
-    // Array(size_t size, const T& value = T())
+    public:
     //   конструктор класса, который создает
     //   Array размера size, заполненный значениями
     //   value типа T. Считайте что у типа T есть
     //   конструктор, который можно вызвать без
     //   без параметров, либо он ему не нужен.
-    //
-    // Array()
-    //   конструктор класса, который можно вызвать
-    //   без параметров. Должен создавать пустой
-    //   Array.
-    //
-    // Array(const Array &)
-    //   конструктор копирования, который создает
-    //   копию параметра. Для типа T оператор
-    //   присвивания не определен.
-    //
-    // ~Array()
-    //   деструктор, если он вам необходим.
-    //
-    // Array& operator=(...)
-    //   оператор присваивания.
-    //
-    // size_t size() const
-    //   возвращает размер массива (количество
-    //                              элемнтов).
-    //
-    // T& operator[](size_t)
-    // const T& operator[](size_t) const
-    //   две версии оператора доступа по индексу.
-
-    public:
     Array(size_t size, const T& value = T()) {
         size_ = size;
         data_ = (T*) new char[size_ * sizeof(T)];
@@ -62,11 +34,19 @@ class Array
             new (data_ + i) T(value);
         }
     }
+
+    //   конструктор класса, который можно вызвать
+    //   без параметров. Должен создавать пустой
+    //   Array.
     Array() {
         size_ = 0;
-//        data_ = (T*) new char[size_ * sizeof(T)];
+    //   data_ = (T*) new char[size_ * sizeof(T)];
         data_ = 0;
     }
+
+    //   конструктор копирования, который создает
+    //   копию параметра. Для типа T оператор
+    //   присвивания не определен.
     Array(const Array & obj) {
         size_ = obj.size();
         data_ = (T*) new char[size_ * sizeof(T)];
@@ -74,6 +54,8 @@ class Array
             new (data_ + i) T(obj[i]);
         }
     }
+
+    //   оператор присваивания.
     Array& operator=(const Array & obj){
         if (this != &obj) {
             mem_free();
@@ -86,9 +68,12 @@ class Array
         return *this;
     }
 
+    //   возвращает размер массива (количество элемнтов).
     size_t size() const {
         return size_;
     }
+
+    //   две версии оператора доступа по индексу.
     T& operator[](size_t i) {
         //return data_[i]; равносильно:
         return *(data_ + i);
@@ -97,6 +82,8 @@ class Array
         //return data_[i]; равносильно:
         return *(data_ + i);
     }
+
+    //   деструктор, если он вам необходим.
     ~Array() {
         mem_free();
     }
